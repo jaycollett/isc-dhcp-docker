@@ -1,0 +1,1 @@
+#!/bin/bashexec /usr/sbin/dhcpd -4 -f -d --no-pid
