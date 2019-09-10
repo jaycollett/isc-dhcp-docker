@@ -97,3 +97,12 @@ subnet 192.168.200.0 netmask 255.255.255.0 {
                 range 192.168.200.10 192.168.200.200;
         }
 }
+
+# fourth ip for secure VLAN 101 (Wifi use)
+iface eth0.101 inet static
+        address 10.10.0.2
+        netmask 255.255.255.0
+        network 10.10.0.0
+        broadcast 10.10.0.255
+        gateway 10.10.0.1
+        nameserver 209.222.18.222 209.222.18.218
